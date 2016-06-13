@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Google Keep</title>
+	<!-- CSS -->
+	<link href="main.css" rel="stylesheet">
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,600,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<!-- ViewPort -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body> 
+
+	<div class="sideMenu">
+		<hr />
+		<div class="cleanAll">Clean All<i class="fa fa-trash-o" aria-hidden="true"></i></div>
+		<hr />
+	</div>
+
+
+	<div class="header">
+		<img id="menu" src="img/menu.svg" alt="menu-icon" width="20px" height="20px">
+		<h2>Notes</h2>
+		<div id="view" class="view"></div>
+	</div>
+	
+	<div class="notesWrap">
+		<div class="notesCreator">
+
+			<input id ="noteTitle" class='noteTitle' type="text" placeholder="Title">			 <!-- Title	 -->
+
+			<textarea id ="noteText" class='noteText' placeholder="Take a note..."></textarea> 	 <!-- Text	 -->
+			
+			<div class="colorsWrap">
+				<div class="colors c1"></div>														 <!-- Colors -->
+				<div class="colors c2"></div>
+				<div class="colors c3"></div>
+				<div class="colors c4"></div>
+				<div class="colors c5"></div>
+				<div class="colors c6"></div>
+			</div>
+
+			<input type="button" class="done" value="DONE">										<!-- Done Button -->
+
+		</div>
+	</div>
+
+	<div class="stickersArea">
+		<div class="sort grid"></div>
+		<div class="sort grid"></div>
+		<div class="sort grid"></div>
+		<div class="sort grid"></div>
+		<div class="sort grid"></div>
+	</div>
+
+	<script src="main.js" type="text/javascript"></script> 
+</body>
+</html>

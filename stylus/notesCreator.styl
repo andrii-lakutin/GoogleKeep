@@ -1,0 +1,106 @@
+Roboto = 'Roboto', sans-serif
+
+.notesWrap
+	width 100% 
+	position relative
+	padding-top 45px   
+
+.notesCreator
+	position relative
+	width 650px   
+	background rgb(250,250,250)
+	max-width 70%
+	margin 0 auto 
+	margin-top 50px
+	box-shadow 0px 12px 20px -4px rgba(0,0,0,0.43)
+	padding-right 30px 
+	transition all 500ms
+	 
+.noteTitle
+	background rgb(250,250,250) 
+	border none
+	width 100%
+	display none
+	padding 20px 10px 10px 20px
+	font-weight 600 
+	font-family Roboto
+	font-size 17px 
+	&:focus
+		outline none
+	
+.noteText
+	background rgb(250,250,250) 
+	width 100% 
+	height 21px 
+	border none
+	padding 10px 10px 20px 20px
+	font 16px Roboto
+	max-width 100%
+	max-height 400px
+	&:focus
+		outline none
+		
+Ametyst    = rgba(155, 89, 182,1.0)
+PeterRiver = rgba(52, 152, 219,1.0)
+Emerald    = rgba(46, 204, 113,1.0)
+Turquoise  = rgba(26, 188, 156,1.0)
+SunFlower  = rgba(241, 196, 15,1.0)
+Alizarin   = rgba(231, 76, 60,1.0)
+
+.colors
+	width 20px
+	height 20px
+	background black
+	display inline-block
+	margin 0px 0px 10px 10px
+	border-radius 999px
+	cursor pointer
+	display none
+	&:first-of-type
+		margin-left 20px 
+		background Ametyst 
+	&:nth-of-type(2)
+		background PeterRiver 
+	&:nth-of-type(3)
+		background Emerald
+	&:nth-of-type(4)
+		background Turquoise
+	&:nth-of-type(5)
+		background SunFlower
+	&:last-of-type
+		background Alizarin    
+	
+.done
+	width 80px 
+	font 14px Roboto
+	font-weight 600 
+	background rgb(250,250,250)
+	color Emerald
+	border none 
+	margin 0px 0px 10px 10px
+	position absolute
+	bottom 1px
+	right 5px
+	transition all 500ms
+	cursor pointer
+	display none
+	&:hover
+		color Ametyst
+		font-size 17px
+	&:focus
+		outline none
+	&:active
+		font-size 12px 
+// active-states
+
+.title-active
+	display block
+.colors-active
+	display inline-block
+.text-active
+	height 60px 
+.btn-active
+	display block
+.chosen
+	border 1px solid black
+	
